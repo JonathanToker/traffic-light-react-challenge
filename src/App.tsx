@@ -8,25 +8,25 @@ function App() {
     if (lights[0]) {
       setTimeout(() => {
         setLights([false, true, false]);
-      }, 4000);
+      }, 2500);
     }
     if (lights[1]) {
       setTimeout(() => {
         setLights([false, false, true]);
-      }, 1000);
+      }, 1200);
     }
     if (lights[2]) {
       setTimeout(() => {
         setLights([true, false, false]);
-      }, 3000);
+      }, 6000);
     }
   }, [lights]);
   return (
     <>
       <div className="lights-wrapper">
-        <div className={`${lights[0] ? "red" : "black"}`}>red</div>
-        <div className={`${lights[1] ? "yellow" : "black"}`}>yellow</div>
-        <div className={`${lights[2] ? "green" : "black"}`}>green</div>
+        <div className={`${lights[0] ? "red" : "black"}`}></div>
+        <div className={`${lights[1] ? "yellow" : "black"}`}></div>
+        <div className={`${lights[2] ? "green" : "black"}`}></div>
       </div>
     </>
   );
