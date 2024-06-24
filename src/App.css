@@ -12,3 +12,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
