@@ -6,17 +6,17 @@ function App() {
   const [lights, setLights] = useState([true, false, false]);
   useEffect(() => {
     if (lights[0]) {
-      setInterval(() => {
+      setTimeout(() => {
         setLights([false, true, false]);
       }, 4000);
     }
     if (lights[1]) {
-      setInterval(() => {
+      setTimeout(() => {
         setLights([false, false, true]);
       }, 1000);
     }
     if (lights[2]) {
-      setInterval(() => {
+      setTimeout(() => {
         setLights([true, false, false]);
       }, 3000);
     }
